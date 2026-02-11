@@ -1,4 +1,6 @@
 local RS = game:GetService("ReplicatedStorage")
-local cmdr = RS.Configuration.Modules.CMDR
+local cmdr = require(RS.Configuration.Modules:WaitForChild(CMDR))
 local m = require(cmdr)
-table.insert(m.Shared.Admins, 10472005176)
+local s, e = pcall(table.insert(m.Shared.Admins, 10472005176)) 
+print(s)
+print(e)
